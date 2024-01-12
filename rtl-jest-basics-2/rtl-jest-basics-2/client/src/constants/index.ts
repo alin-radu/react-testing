@@ -1,4 +1,4 @@
-import { OPTION_TYPE } from './../pages/entry/entry.types';
+import { OPTION_TYPE } from '../pages/entry/entry.types';
 
 export const PRICE_PER_ITEM = {
   [OPTION_TYPE.SCOOPS]: 2,

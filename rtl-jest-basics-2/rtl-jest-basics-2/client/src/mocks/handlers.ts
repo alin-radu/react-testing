@@ -2,7 +2,7 @@ import { rest } from 'msw';
 
 import { scoops, toppings } from './data-mock';
 
-import { OPTION_TYPE } from './../pages/entry/entry.types';
+import { OPTION_TYPE } from '../pages/entry/entry.types';
 
 export const handlers = [
   rest.get('http://localhost:3030/' + OPTION_TYPE.SCOOPS, (_, res, ctx) => {
