@@ -3,12 +3,21 @@ import { screen, render } from '@testing-library/react';
 import { MemoryRouter } from 'react-router';
 
 import RepositoriesListItem from './RepositoriesListItem';
+// import { pauseHelper } from '../../util/pauseHelper';
+
+// act() warning, solution 1
+// await screen.findByRole('img', { name: 'JavaScript' });
 
 // act() warning, solution 2
 // jest.mock('../tree/FileIcon.js', () => {
 //   return () => {
 //     return 'File Icon Component';
 //   };
+// });
+
+// act() warning, solution 2
+// await act(async () => {
+//   await pauseHelper(100);
 // });
 
 const renderComponent = () => {
